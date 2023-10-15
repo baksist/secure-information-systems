@@ -1,0 +1,5 @@
+# Nmap 7.94 scan initiated Sun Oct 15 19:13:39 2023 as: nmap -A -vv -p 21-23,80,6379,27016 -oA scan-result localhost
+# Ports scanned: TCP(6;21-23,80,6379,27016) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 127.0.0.1 (localhost)	Status: Up
+Host: 127.0.0.1 (localhost)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh//(protocol 2.0)/, 23/open/tcp//telnet?///, 80/open/tcp//http//Nginx/, 6379/open/tcp//redis//Redis key-value store 4.0.2/, 27016/open/tcp//tcpwrapped///
+# Nmap done at Sun Oct 15 19:16:52 2023 -- 1 IP address (1 host up) scanned in 192.55 seconds

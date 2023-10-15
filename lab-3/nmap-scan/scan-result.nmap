@@ -1,0 +1,139 @@
+# Nmap 7.94 scan initiated Sun Oct 15 19:13:39 2023 as: nmap -A -vv -p 21-23,80,6379,27016 -oA scan-result localhost
+Warning: Hostname localhost resolves to 2 IPs. Using 127.0.0.1.
+Nmap scan report for localhost (127.0.0.1)
+Host is up, received syn-ack (0.000047s latency).
+Other addresses for localhost (not scanned): ::1
+Scanned at 2023-10-15 19:13:39 MSK for 193s
+
+PORT      STATE SERVICE    REASON  VERSION
+21/tcp    open  ftp        syn-ack
+| ssl-cert: Subject: organizationName=/countryName=/organizationalUnitName=
+| Issuer: organizationName=/countryName=/organizationalUnitName=
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-10-15T16:02:42
+| Not valid after:  2024-10-15T16:02:42
+| MD5:   a3df:bbb8:d9f6:7221:e977:03aa:cc4b:fd3f
+| SHA-1: 4641:2f05:eeb3:f4cd:0093:bb1d:cbed:2a8d:560f:6263
+| -----BEGIN CERTIFICATE-----
+| MIIC3TCCAcWgAwIBAgIRAPhJXounBJbl5QFGoogxsrYwDQYJKoZIhvcNAQELBQAw
+| ITEJMAcGA1UEBhMAMQkwBwYDVQQKEwAxCTAHBgNVBAsTADAeFw0yMzEwMTUxNjAy
+| NDJaFw0yNDEwMTUxNjAyNDJaMCExCTAHBgNVBAYTADEJMAcGA1UEChMAMQkwBwYD
+| VQQLEwAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxa4R0a+UZnpRt
+| AaTHqWHrxp/CUtofV2OL3VbS72I/cQ9ofjJBM6nlXLRbkpdNA6bEA4ePorqVGRX6
+| baVhu52y9YssxtOCzOJTtLqYRl4GR9mwBQLOJjYTGeFhirFMs5Ab3eUrQROnqIM7
+| k6wsGm8BjeHsXtmFArxZop6EdVnEEQehRvy+xBzbusip4Yl94UMBa22EI+utxPli
+| ErEOzaOnPAfXnrVY9WduP/hc16GQU/8u/QFPZ2t08ZR9NiGfXgqbRwsckMCSDFsX
+| OGu+br12wLOmeXgpvHrSUZqZfqtkEYLYLJKqCEuJbogMWVhxBoFsOclIj6VI1xiG
+| V08gc0+xAgMBAAGjEDAOMAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEB
+| ABZAFlEk5XKPRFcO/KZ1pKn4RBhHe/r2PEflDBpsP3/O3LcyXQshe0Yc9XcyA5MI
+| RuE0yW0pINMmVTu4Idi+ZqMAs8vfnCkFI4PhSSI0TxVbnM0SUVNuTGXbGqzrI5J3
+| 2pDrC32pYZb2J3uSu/Aq88jSMEg7Zn4+xR86DY2IU7dpGYYsmaFr+2vXp8nyW5YM
+| bH/thMU+MIE8V1vrX37Yhm5b8UvlhceCa83mkB8daVA8tiYU3qg2PEUQKbC/Elw7
+| 4qk3p/zj7uvBl0pNGgaJwNjOIvrPnf2ZrnB+Ei4mm0sgPHSlTAXtGJBLDp/K5/+i
+| ktzZ+cYIlTIccmVprwODy7s=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+| fingerprint-strings: 
+|   GenericLines: 
+|     220 Welcome to the Go FTP Server
+|     Command not found.
+|     Command not found.
+|   Help, SSLSessionReq: 
+|     220 Welcome to the Go FTP Server
+|     Command not found.
+|   NULL, SMBProgNeg: 
+|_    220 Welcome to the Go FTP Server
+22/tcp    open  ssh        syn-ack (protocol 2.0)
+| fingerprint-strings: 
+|   NULL: 
+|_    SSH-2.0-OpenSSH_6.6.1p1 2020Ubuntu-2ubuntu2
+| ssh-hostkey: 
+|   2048 28:b0:e8:19:5e:ae:7e:60:b6:ea:0d:20:0e:a8:a4:02 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhKE/MhyFDa1wcncDLO8ffjE7T5fj2TZWK3YkDnji2Dgdbsh+HmJpP75FlM0K5Kk82PRpJuJBjXbimkMbk4yoNUUYk3BlqP5oGV66talpWfeomzr6pWfeOjrS6e2P4mwUdL64rcqbZodBr/zAWUnUfuolLoO/OXLgXvKdHtWVdl+dxHN3Blv5DYIg/Yl766A27l1/mTQI9axhVkpPEhwQDBgz/WNIxLMW+mek5hT1dRTQ0OictKX4haKL/0OA4geZKJgaYFSCutFC0FSjaUjnCYmqMZ3bGjMVdMaRYjw7UwDDySelvOfIQPk6ZnAK5CecqOL5UknmCgymkexJ6Wt5H
+23/tcp    open  telnet?    syn-ack
+| fingerprint-strings: 
+|   NULL: 
+|     ********************************************************************************
+|     Copyright(C) 2008-2015 Huawei Technologies Co., Ltd. *
+|     rights reserved *
+|     Without the owner's prior written consent, *
+|     decompiling or reverse-engineering shall be allowed. *
+|     Notice: *
+|     This is a private communication system. *
+|     Unauthorized access or use may lead to prosecution. *
+|     ********************************************************************************
+|     Warning: Telnet is not a secure protocol, and it is recommended to use STelnet. 
+|     Login authentication
+|_    Username:
+80/tcp    open  http       syn-ack Nginx
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title.
+|_http-favicon: Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E
+|_http-server-header: Nginx
+| fingerprint-strings: 
+|   FourOhFourRequest, GetRequest, HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Server: Nginx
+|_    Content-Length: 0
+6379/tcp  open  redis      syn-ack Redis key-value store 4.0.2
+27016/tcp open  tcpwrapped syn-ack
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port21-TCP:V=7.94%I=7%D=10/15%Time=652C0FB9%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,22,"220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r\n")%r(Generi
+SF:cLines,52,"220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r\n500\x2
+SF:0Command\x20not\x20found\.\r\n500\x20Command\x20not\x20found\.\r\n")%r(
+SF:Help,3A,"220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r\n500\x20C
+SF:ommand\x20not\x20found\.\r\n")%r(SSLSessionReq,3A,"220\x20Welcome\x20to
+SF:\x20the\x20Go\x20FTP\x20Server\r\n500\x20Command\x20not\x20found\.\r\n"
+SF:)%r(SMBProgNeg,22,"220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r
+SF:\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port22-TCP:V=7.94%I=7%D=10/15%Time=652C0FB9%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,2D,"SSH-2\.0-OpenSSH_6\.6\.1p1\x202020Ubuntu-2ubuntu2\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port23-TCP:V=7.94%I=7%D=10/15%Time=652C0FB9%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,35E,"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+SF:\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\
+SF:*\*\*\*\*\*\*\*\*\*\*\*\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20Copyright\(C\)\x202008-2015\x20Huawei\x20Technologies\x20Co
+SF:\.,\x20Ltd\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\
+SF:*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20All\x20rights\x20reserved
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Without\x20th
+SF:e\x20owner's\x20prior\x20written\x20consent,\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20no\x20decompiling\x20or\x20reverse-engineerin
+SF:g\x20shall\x20be\x20allowed\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\*\r\n\*\x20Notice:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20This\x20is\x20a\x20private\x20communi
+SF:cation\x20system\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20Unauthorized\x20access\x20or\x20use\x20may\x20lead\x20t
+SF:o\x20prosecution\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\*\r\n\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+SF:\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\
+SF:*\*\*\*\*\*\*\*\*\*\*\*\*\*\r\n\r\nWarning:\x20Telnet\x20is\x20not\x20a
+SF:\x20secure\x20protocol,\x20and\x20it\x20is\x20recommended\x20to\x20use\
+SF:x20STelnet\.\x20\r\n\r\nLogin\x20authentication\r\n\r\n\r\n\r\nUsername
+SF::\x20");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94%I=7%D=10/15%Time=652C0FBE%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,35,"HTTP/1\.0\x20200\x20OK\r\nServer:\x20Nginx\r\nContent-Lengt
+SF:h:\x200\r\n\r\n")%r(HTTPOptions,35,"HTTP/1\.0\x20200\x20OK\r\nServer:\x
+SF:20Nginx\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourRequest,35,"HTTP/
+SF:1\.0\x20200\x20OK\r\nServer:\x20Nginx\r\nContent-Length:\x200\r\n\r\n");
+Service Info: Host: Welcome
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 15 19:16:52 2023 -- 1 IP address (1 host up) scanned in 192.55 seconds

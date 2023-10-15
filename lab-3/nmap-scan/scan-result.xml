@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Sun Oct 15 19:13:39 2023 as: nmap -A -vv -p 21-23,80,6379,27016 -oA scan-result localhost -->
+<nmaprun scanner="nmap" args="nmap -A -vv -p 21-23,80,6379,27016 -oA scan-result localhost" start="1697386419" startstr="Sun Oct 15 19:13:39 2023" version="7.94" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="6" services="21-23,80,6379,27016"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1697386419"/>
+<taskend task="NSE" time="1697386419"/>
+<taskbegin task="NSE" time="1697386419"/>
+<taskend task="NSE" time="1697386419"/>
+<taskbegin task="NSE" time="1697386419"/>
+<taskend task="NSE" time="1697386419"/>
+<taskbegin task="Ping Scan" time="1697386419"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="user"/>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1697386419" extrainfo="1 total hosts"/>
+<taskbegin task="Connect Scan" time="1697386419"/>
+<taskend task="Connect Scan" time="1697386419" extrainfo="6 total ports"/>
+<taskbegin task="Service scan" time="1697386419"/>
+<taskprogress task="Service scan" time="1697386560" percent="83.33" remaining="29" etc="1697386588"/>
+<taskend task="Service scan" time="1697386580" extrainfo="6 services on 1 host"/>
+<taskbegin task="NSE" time="1697386580"/>
+<taskend task="NSE" time="1697386610"/>
+<taskbegin task="NSE" time="1697386610"/>
+<taskend task="NSE" time="1697386612"/>
+<taskbegin task="NSE" time="1697386612"/>
+<taskend task="NSE" time="1697386612"/>
+<host starttime="1697386419" endtime="1697386612"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="user"/>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" hostname="Welcome" servicefp="SF-Port21-TCP:V=7.94%I=7%D=10/15%Time=652C0FB9%P=x86_64-pc-linux-gnu%r(NULL,22,&quot;220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r\n&quot;)%r(GenericLines,52,&quot;220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r\n500\x20Command\x20not\x20found\.\r\n500\x20Command\x20not\x20found\.\r\n&quot;)%r(Help,3A,&quot;220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r\n500\x20Command\x20not\x20found\.\r\n&quot;)%r(SSLSessionReq,3A,&quot;220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r\n500\x20Command\x20not\x20found\.\r\n&quot;)%r(SMBProgNeg,22,&quot;220\x20Welcome\x20to\x20the\x20Go\x20FTP\x20Server\r\n&quot;);" method="probed" conf="10"/><script id="ssl-cert" output="Subject: organizationName=/countryName=/organizationalUnitName=&#xa;Issuer: organizationName=/countryName=/organizationalUnitName=&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2023-10-15T16:02:42&#xa;Not valid after:  2024-10-15T16:02:42&#xa;MD5:   a3df:bbb8:d9f6:7221:e977:03aa:cc4b:fd3f&#xa;SHA-1: 4641:2f05:eeb3:f4cd:0093:bb1d:cbed:2a8d:560f:6263&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC3TCCAcWgAwIBAgIRAPhJXounBJbl5QFGoogxsrYwDQYJKoZIhvcNAQELBQAw&#xa;ITEJMAcGA1UEBhMAMQkwBwYDVQQKEwAxCTAHBgNVBAsTADAeFw0yMzEwMTUxNjAy&#xa;NDJaFw0yNDEwMTUxNjAyNDJaMCExCTAHBgNVBAYTADEJMAcGA1UEChMAMQkwBwYD&#xa;VQQLEwAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxa4R0a+UZnpRt&#xa;AaTHqWHrxp/CUtofV2OL3VbS72I/cQ9ofjJBM6nlXLRbkpdNA6bEA4ePorqVGRX6&#xa;baVhu52y9YssxtOCzOJTtLqYRl4GR9mwBQLOJjYTGeFhirFMs5Ab3eUrQROnqIM7&#xa;k6wsGm8BjeHsXtmFArxZop6EdVnEEQehRvy+xBzbusip4Yl94UMBa22EI+utxPli&#xa;ErEOzaOnPAfXnrVY9WduP/hc16GQU/8u/QFPZ2t08ZR9NiGfXgqbRwsckMCSDFsX&#xa;OGu+br12wLOmeXgpvHrSUZqZfqtkEYLYLJKqCEuJbogMWVhxBoFsOclIj6VI1xiG&#xa;V08gc0+xAgMBAAGjEDAOMAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEB&#xa;ABZAFlEk5XKPRFcO/KZ1pKn4RBhHe/r2PEflDBpsP3/O3LcyXQshe0Yc9XcyA5MI&#xa;RuE0yW0pINMmVTu4Idi+ZqMAs8vfnCkFI4PhSSI0TxVbnM0SUVNuTGXbGqzrI5J3&#xa;2pDrC32pYZb2J3uSu/Aq88jSMEg7Zn4+xR86DY2IU7dpGYYsmaFr+2vXp8nyW5YM&#xa;bH/thMU+MIE8V1vrX37Yhm5b8UvlhceCa83mkB8daVA8tiYU3qg2PEUQKbC/Elw7&#xa;4qk3p/zj7uvBl0pNGgaJwNjOIvrPnf2ZrnB+Ei4mm0sgPHSlTAXtGJBLDp/K5/+i&#xa;ktzZ+cYIlTIccmVprwODy7s=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="countryName"></elem>
+<elem key="organizationName"></elem>
+<elem key="organizationalUnitName"></elem>
+</table>
+<table key="issuer">
+<elem key="countryName"></elem>
+<elem key="organizationName"></elem>
+<elem key="organizationalUnitName"></elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B16B84746BE5199E946D01A4C7A961EBC69FC252DA1F57638BDD56D2EF623F710F687E324133A9E55CB45B92974D03A6C403878FA2BA951915FA6DA561BB9DB2F58B2CC6D382CCE253B4BA98465E0647D9B00502CE26361319E1618AB14CB3901BDDE52B4113A7A8833B93AC2C1A6F018DE1EC5ED98502BC59A29E847559C41107A146FCBEC41CDBBAC8A9E1897DE143016B6D8423EBADC4F96212B10ECDA3A73C07D79EB558F5676E3FF85CD7A19053FF2EFD014F676B74F1947D36219F5E0A9B470B1C90C0920C5B17386BBE6EBD76C0B3A6797829BC7AD2519A997EAB641182D82C92AA084B896E880C59587106816C39C9488FA548D71886574F20734FB1</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-10-15T16:02:42</elem>
+<elem key="notAfter">2024-10-15T16:02:42</elem>
+</table>
+<elem key="md5">a3dfbbb8d9f67221e97703aacc4bfd3f</elem>
+<elem key="sha1">46412f05eeb3f4cd0093bb1dcbed2a8d560f6263</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC3TCCAcWgAwIBAgIRAPhJXounBJbl5QFGoogxsrYwDQYJKoZIhvcNAQELBQAw&#xa;ITEJMAcGA1UEBhMAMQkwBwYDVQQKEwAxCTAHBgNVBAsTADAeFw0yMzEwMTUxNjAy&#xa;NDJaFw0yNDEwMTUxNjAyNDJaMCExCTAHBgNVBAYTADEJMAcGA1UEChMAMQkwBwYD&#xa;VQQLEwAwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxa4R0a+UZnpRt&#xa;AaTHqWHrxp/CUtofV2OL3VbS72I/cQ9ofjJBM6nlXLRbkpdNA6bEA4ePorqVGRX6&#xa;baVhu52y9YssxtOCzOJTtLqYRl4GR9mwBQLOJjYTGeFhirFMs5Ab3eUrQROnqIM7&#xa;k6wsGm8BjeHsXtmFArxZop6EdVnEEQehRvy+xBzbusip4Yl94UMBa22EI+utxPli&#xa;ErEOzaOnPAfXnrVY9WduP/hc16GQU/8u/QFPZ2t08ZR9NiGfXgqbRwsckMCSDFsX&#xa;OGu+br12wLOmeXgpvHrSUZqZfqtkEYLYLJKqCEuJbogMWVhxBoFsOclIj6VI1xiG&#xa;V08gc0+xAgMBAAGjEDAOMAwGA1UdEwEB/wQCMAAwDQYJKoZIhvcNAQELBQADggEB&#xa;ABZAFlEk5XKPRFcO/KZ1pKn4RBhHe/r2PEflDBpsP3/O3LcyXQshe0Yc9XcyA5MI&#xa;RuE0yW0pINMmVTu4Idi+ZqMAs8vfnCkFI4PhSSI0TxVbnM0SUVNuTGXbGqzrI5J3&#xa;2pDrC32pYZb2J3uSu/Aq88jSMEg7Zn4+xR86DY2IU7dpGYYsmaFr+2vXp8nyW5YM&#xa;bH/thMU+MIE8V1vrX37Yhm5b8UvlhceCa83mkB8daVA8tiYU3qg2PEUQKbC/Elw7&#xa;4qk3p/zj7uvBl0pNGgaJwNjOIvrPnf2ZrnB+Ei4mm0sgPHSlTAXtGJBLDp/K5/+i&#xa;ktzZ+cYIlTIccmVprwODy7s=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    220 Welcome to the Go FTP Server&#xa;    Command not found.&#xa;    Command not found.&#xa;  Help, SSLSessionReq: &#xa;    220 Welcome to the Go FTP Server&#xa;    Command not found.&#xa;  NULL, SMBProgNeg: &#xa;    220 Welcome to the Go FTP Server"><elem key="GenericLines">&#xa;    220 Welcome to the Go FTP Server&#xa;    Command not found.&#xa;    Command not found.</elem>
+<elem key="Help, SSLSessionReq">&#xa;    220 Welcome to the Go FTP Server&#xa;    Command not found.</elem>
+<elem key="NULL, SMBProgNeg">&#xa;    220 Welcome to the Go FTP Server</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port22-TCP:V=7.94%I=7%D=10/15%Time=652C0FB9%P=x86_64-pc-linux-gnu%r(NULL,2D,&quot;SSH-2\.0-OpenSSH_6\.6\.1p1\x202020Ubuntu-2ubuntu2\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    SSH-2.0-OpenSSH_6.6.1p1 2020Ubuntu-2ubuntu2"><elem key="NULL">&#xa;    SSH-2.0-OpenSSH_6.6.1p1 2020Ubuntu-2ubuntu2</elem>
+</script><script id="ssh-hostkey" output="&#xa;  2048 28:b0:e8:19:5e:ae:7e:60:b6:ea:0d:20:0e:a8:a4:02 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhKE/MhyFDa1wcncDLO8ffjE7T5fj2TZWK3YkDnji2Dgdbsh+HmJpP75FlM0K5Kk82PRpJuJBjXbimkMbk4yoNUUYk3BlqP5oGV66talpWfeomzr6pWfeOjrS6e2P4mwUdL64rcqbZodBr/zAWUnUfuolLoO/OXLgXvKdHtWVdl+dxHN3Blv5DYIg/Yl766A27l1/mTQI9axhVkpPEhwQDBgz/WNIxLMW+mek5hT1dRTQ0OictKX4haKL/0OA4geZKJgaYFSCutFC0FSjaUjnCYmqMZ3bGjMVdMaRYjw7UwDDySelvOfIQPk6ZnAK5CecqOL5UknmCgymkexJ6Wt5H"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDhKE/MhyFDa1wcncDLO8ffjE7T5fj2TZWK3YkDnji2Dgdbsh+HmJpP75FlM0K5Kk82PRpJuJBjXbimkMbk4yoNUUYk3BlqP5oGV66talpWfeomzr6pWfeOjrS6e2P4mwUdL64rcqbZodBr/zAWUnUfuolLoO/OXLgXvKdHtWVdl+dxHN3Blv5DYIg/Yl766A27l1/mTQI9axhVkpPEhwQDBgz/WNIxLMW+mek5hT1dRTQ0OictKX4haKL/0OA4geZKJgaYFSCutFC0FSjaUjnCYmqMZ3bGjMVdMaRYjw7UwDDySelvOfIQPk6ZnAK5CecqOL5UknmCgymkexJ6Wt5H</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">28b0e8195eae7e60b6ea0d200ea8a402</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="telnet" servicefp="SF-Port23-TCP:V=7.94%I=7%D=10/15%Time=652C0FB9%P=x86_64-pc-linux-gnu%r(NULL,35E,&quot;\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Copyright\(C\)\x202008-2015\x20Huawei\x20Technologies\x20Co\.,\x20Ltd\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20All\x20rights\x20reserved\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Without\x20the\x20owner&apos;s\x20prior\x20written\x20consent,\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20no\x20decompiling\x20or\x20reverse-engineering\x20shall\x20be\x20allowed\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20Notice:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20This\x20is\x20a\x20private\x20communication\x20system\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Unauthorized\x20access\x20or\x20use\x20may\x20lead\x20to\x20prosecution\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\*\r\n\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\r\n\r\nWarning:\x20Telnet\x20is\x20not\x20a\x20secure\x20protocol,\x20and\x20it\x20is\x20recommended\x20to\x20use\x20STelnet\.\x20\r\n\r\nLogin\x20authentication\r\n\r\n\r\n\r\nUsername:\x20&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    ********************************************************************************&#xa;    Copyright(C) 2008-2015 Huawei Technologies Co., Ltd. *&#xa;    rights reserved *&#xa;    Without the owner&apos;s prior written consent, *&#xa;    decompiling or reverse-engineering shall be allowed. *&#xa;    Notice: *&#xa;    This is a private communication system. *&#xa;    Unauthorized access or use may lead to prosecution. *&#xa;    ********************************************************************************&#xa;    Warning: Telnet is not a secure protocol, and it is recommended to use STelnet. &#xa;    Login authentication&#xa;    Username:"><elem key="NULL">&#xa;    ********************************************************************************&#xa;    Copyright(C) 2008-2015 Huawei Technologies Co., Ltd. *&#xa;    rights reserved *&#xa;    Without the owner&apos;s prior written consent, *&#xa;    decompiling or reverse-engineering shall be allowed. *&#xa;    Notice: *&#xa;    This is a private communication system. *&#xa;    Unauthorized access or use may lead to prosecution. *&#xa;    ********************************************************************************&#xa;    Warning: Telnet is not a secure protocol, and it is recommended to use STelnet. &#xa;    Login authentication&#xa;    Username:</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Nginx" servicefp="SF-Port80-TCP:V=7.94%I=7%D=10/15%Time=652C0FBE%P=x86_64-pc-linux-gnu%r(GetRequest,35,&quot;HTTP/1\.0\x20200\x20OK\r\nServer:\x20Nginx\r\nContent-Length:\x200\r\n\r\n&quot;)%r(HTTPOptions,35,&quot;HTTP/1\.0\x20200\x20OK\r\nServer:\x20Nginx\r\nContent-Length:\x200\r\n\r\n&quot;)%r(FourOhFourRequest,35,&quot;HTTP/1\.0\x20200\x20OK\r\nServer:\x20Nginx\r\nContent-Length:\x200\r\n\r\n&quot;);" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script><script id="http-favicon" output="Unknown favicon MD5: D41D8CD98F00B204E9800998ECF8427E"/><script id="http-server-header" output="Nginx"><elem>Nginx</elem>
+</script><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest, HTTPOptions: &#xa;    HTTP/1.0 200 OK&#xa;    Server: Nginx&#xa;    Content-Length: 0"><elem key="FourOhFourRequest, GetRequest, HTTPOptions">&#xa;    HTTP/1.0 200 OK&#xa;    Server: Nginx&#xa;    Content-Length: 0</elem>
+</script></port>
+<port protocol="tcp" portid="6379"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="redis" product="Redis key-value store" version="4.0.2" method="probed" conf="10"><cpe>cpe:/a:redislabs:redis:4.0.2</cpe></service></port>
+<port protocol="tcp" portid="27016"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+</ports>
+<times srtt="47" rttvar="905" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1697386612"/>
+<taskend task="NSE" time="1697386612"/>
+<taskbegin task="NSE" time="1697386612"/>
+<taskend task="NSE" time="1697386612"/>
+<taskbegin task="NSE" time="1697386612"/>
+<taskend task="NSE" time="1697386612"/>
+<runstats><finished time="1697386612" timestr="Sun Oct 15 19:16:52 2023" summary="Nmap done at Sun Oct 15 19:16:52 2023; 1 IP address (1 host up) scanned in 192.55 seconds" elapsed="192.55" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
